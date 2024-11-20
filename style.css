@@ -1,17 +1,19 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: linear-gradient(to right, rgba(123, 0, 255, 0.151), rgba(37, 117, 252, 0.8)),
+    background: linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)),
                 url('iit-background.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire screen */
     color: white;
     margin: 0;
     padding: 0;
-    min-height: 100vh;
+    height: 100%; /* Ensures the background spans the full height */
+    min-height: 100vh; /* Ensures the background covers the full screen height */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 
 .container {
