@@ -90,3 +90,18 @@ h2 {
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
 
+/* Original background setup */
+body {
+    background: url('iit-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+/* Disable background fixed attachment on mobile devices */
+@media only screen and (max-width: 768px) {
+    body {
+        background-attachment: scroll; /* Fix the parallax issue on mobile */
+    }
+}
+
+
