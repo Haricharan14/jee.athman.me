@@ -1,10 +1,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    /* Ensure the gradient is on top of the image */
-    background: url('iit-background.jpg') no-repeat center center fixed, /* Image first */
-                linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)); /* Gradient on top */
-    background-size: cover; /* Ensures the image covers the entire screen */
+    /* Apply the gradient first, then the image */
+    background: linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)), /* Gradient on top */
+                url('iit-background.jpg') no-repeat center center fixed; /* Image below */
+    
+    /* Ensure the image covers the screen */
+    background-size: cover;
+    background-position: center center; /* Keeps the image centered */
+    
     color: white;
     margin: 0;
     padding: 0;
@@ -14,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 
 
 
