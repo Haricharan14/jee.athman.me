@@ -55,64 +55,10 @@ h2 {
 
 
 .motivational-quote {
-    font-style: italic;
+
     margin-top: 20px;
-    color: #ffeb3b;
+    color: #ffffff;
     font-size: 1.2em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-.background-description {
-    font-size: 1em; /* Adjust the size as needed */
-    color: white;
-    position: fixed; /* Fixed position at the bottom of the screen */
-    left: 50%;
-    transform: translateX(-50%); /* Center it horizontally */
-    bottom: 10px; /* Adjust the distance from the bottom */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for visibility */
-    padding: 10px;
-    border-radius: 5px;
-    font-style: italic;
-}
-
-/* Basic mobile styling (applies to screens 768px or smaller) */
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 10px;
-        font-size: 14px; /* Adjust text size for mobile */
-    }
-
-    h1 {
-        font-size: 2em;  /* Smaller header for mobile */
-    }
-
-    h2 {
-        font-size: 1.6em;
-    }
-
-    #countdown-mains, #countdown-advanced {
-        font-size: 2em;  /* Adjust countdown size */
-    }
-
-    /* Countdown sections */
-    .countdown-section {
-        margin: 15px 0;
-        padding: 15px;
-        border-radius: 10px;
-        background: rgba(255, 255, 255, 0.15);
-    }
-
-    /* Make images smaller and ensure they fit */
-    .countdown-image {
-        width: 80%;  /* Adjust image size */
-        max-width: 250px;
-        margin: 10px auto;
-        display: block;
-    }
-
-    .background-description {
-        font-size: 0.9em;  /* Adjust the size of the background description */
-        padding: 8px;
-    }
 }
 
