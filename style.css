@@ -74,3 +74,45 @@ h2 {
     border-radius: 5px;
     font-style: italic;
 }
+
+/* Basic mobile styling (applies to screens 768px or smaller) */
+@media only screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+        font-size: 14px; /* Adjust text size for mobile */
+    }
+
+    h1 {
+        font-size: 2em;  /* Smaller header for mobile */
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    #countdown-mains, #countdown-advanced {
+        font-size: 2em;  /* Adjust countdown size */
+    }
+
+    /* Countdown sections */
+    .countdown-section {
+        margin: 15px 0;
+        padding: 15px;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Make images smaller and ensure they fit */
+    .countdown-image {
+        width: 80%;  /* Adjust image size */
+        max-width: 250px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .background-description {
+        font-size: 0.9em;  /* Adjust the size of the background description */
+        padding: 8px;
+    }
+}
+
