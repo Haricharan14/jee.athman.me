@@ -10,49 +10,45 @@
 </head>
 
 <body>
-    <header class="navbar">
-        <div class="navbar-left">
-            <span class="brand-name">athman.me</span>
-            <a href="#" class="nav-button">Home</a>
-            <a href="#about" class="nav-button">About</a>
-        </div>
-        <!-- K-Mode Toggle Switch and Text -->
-        <div class="k-mode-container">
-            <label class="switch">
-                <input type="checkbox" id="kModeToggle" checked>
-                <span class="slider"></span>
-            </label>
-            <p class="k-mode-text">K-Mode</p>
-        </div>
-    </header>
-
-    <div class="container" style="padding-top: 0px;padding-bottom: 0px;">
-        <h1 style="border-bottom-style: solid; padding-bottom: -4px; border-top-style: solid;border-top-width: 0px;border-bottom-width: 0px;">JEE Countdown</h1>
+    <div class="container">
+        <h1 style="border-bottom-style: solid; padding-bottom: -4px; border-top-style: solid;">JEE Countdown</h1>
 
         <!-- JEE Mains Section -->
         <div class="countdown-section">
             <h2>JEE Mains 2025</h2>
-            <p id="countdown-mains">130d 8h 6m 24s</p>
+            <p id="countdown-mains">131d 10h 38m 9s</p>
         </div>
 
         <!-- JEE Advanced Section -->
         <div class="countdown-section">
             <h2>JEE Advanced 2025</h2>
-            <p id="countdown-advanced">180d 8h 6m 24s</p>
+            <p id="countdown-advanced">181d 10h 38m 9s</p>
         </div>
 
         <!-- Motivational Quote -->
         <p class="motivational-quote">"Powai Lake of IIT Bombay"</p>
-    </div>
 
+        <!-- K-Mode Toggle Switch -->
+        <div style="margin-top: 20px;">
+            <label class="switch">
+                <input type="checkbox" id="kModeToggle" checked>
+                <span class="slider"></span>
+            </label>
+            <p style="margin-top: 10px; color: white;">K-Mode</p>
+        </div>
+    <!-- Mobile Notification Popup -->
     <!-- Mobile Notification Popup -->
     <div id="mobilePopup" class="mobile-popup">
         <p>For a better experience, switch to <strong>desktop mode</strong>!</p>
         <button id="closePopup" class="close-popup">✖</button>
     </div>
-
     <script src="script.js"></script>
 
+
+
+    </div>
+
+    <!-- JavaScript -->
     <script>
         // Get the K-Mode toggle switch
         const kModeToggle = document.getElementById('kModeToggle');
@@ -71,8 +67,10 @@
         });
     </script>
 
+    <!-- Add Google Fonts -->
     <link href="css2.css" rel="stylesheet">
 
+    
 </body>
 
 </html>
