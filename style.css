@@ -122,32 +122,34 @@ input:checked + .slider:before {
 }
 
 /* Style for the mobile popup */
+/* Style for the mobile popup */
 .mobile-popup {
     position: fixed;
     bottom: 20px; /* Position it at the bottom of the screen */
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(37, 117, 252, 0.8); /* Blue color to match gradient */
-    color: white;
-    padding: 10px 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    font-size: 1.2em;
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    color: #333; /* Dark text for better visibility */
+    padding: 8px 15px; /* Smaller padding for a compact look */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    font-size: 0.9em; /* Smaller text */
     display: none; /* Hide by default */
     z-index: 1000;
+    text-align: center; /* Center the text */
 }
 
 /* Style for the close button */
 .close-popup {
     background: transparent;
     border: none;
-    color: white;
-    font-size: 1.5em;
+    color: #333; /* Dark color for visibility */
+    font-size: 1.2em; /* Smaller close button */
     cursor: pointer;
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 5px 10px;
+    right: 5px;
+    padding: 3px 8px; /* Adjust padding */
 }
 
 /* Mobile-specific style to show the popup */
