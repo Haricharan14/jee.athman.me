@@ -170,3 +170,4 @@ input:checked + .slider:before {
         display: block; /* Show the popup on mobile */
     }
 }
+
