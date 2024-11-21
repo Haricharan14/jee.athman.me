@@ -1,0 +1,23 @@
+.container {
+    border-radius: 10px;
+    padding: 15px;
+    width: 90%; /* Fit within mobile screen */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-section {
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em; /* Smaller heading for mobile */
+}
+
+#countdown-mains, #countdown-advanced {
+    font-size: 1.8em;
+    color: #ffeb3b;
+}
