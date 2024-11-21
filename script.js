@@ -48,5 +48,6 @@ closePopupButton.addEventListener('click', function () {
 });
 
 
+
 // Update both countdowns every second
 setInterval(updateCountdown, 1000);
