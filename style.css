@@ -40,25 +40,28 @@ h1 {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Default styles for the glass effect tabs */
 .countdown-section {
     background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
     backdrop-filter: blur(10px); /* Creates the glass blur effect */
     -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
     border-radius: 15px; /* Rounded corners */
     padding: 20px; /* Space inside the tab */
-    margin: 20px 0;
+    margin: 20px auto; /* Center horizontally */
+    width: 90%; /* Adjust width to fit within the screen */
+    max-width: 400px; /* Limit maximum width for larger screens */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
 /* Adjust for mobile */
 @media only screen and (max-width: 768px) {
     .countdown-section {
-        border-radius: 8px; /* Decrease border radius on mobile */
-        padding: 15px; /* Reduce padding for compact look */
-        margin: 10px 0; /* Adjust spacing between sections */
+        border-radius: 10px; /* Slightly smaller corners */
+        padding: 15px; /* Compact padding */
+        width: 90%; /* Ensure it fits within mobile screens */
+        margin: 10px auto; /* Center with reduced vertical space */
     }
 }
+
 
 
 
