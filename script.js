@@ -51,7 +51,7 @@ closePopupButton.addEventListener('click', function () {
 
 // Set default K-mode off and no gradient
 let kModeOn = false;
-document.body.style.background = "url('iit-background.jpg') no-repeat center center fixed"; // No gradient
+document.body.style.background = "url('iit-background.jpg') no-repeat center center scroll"; // No gradient
 document.body.style.backgroundSize = "cover";
 
 // Get the K-mode toggle switch
@@ -65,12 +65,12 @@ kModeToggle.addEventListener('change', function () {
     if (kModeToggle.checked) {
         // Turn on gradient
         kModeOn = true;
-        document.body.style.background = "linear-gradient(to right, rgba(123, 0, 255, 0.151), rgba(37, 117, 252, 0.8)), url('iit-background.jpg') no-repeat center center fixed";
+        document.body.style.background = "linear-gradient(to right, rgba(123, 0, 255, 0.151), rgba(37, 117, 252, 0.8)), url('iit-background.jpg') no-repeat center center scroll";
         document.body.style.backgroundSize = "cover";
     } else {
         // Turn off gradient
         kModeOn = false;
-        document.body.style.background = "url('iit-background.jpg') no-repeat center center fixed";
+        document.body.style.background = "url('iit-background.jpg') no-repeat center center scroll";
         document.body.style.backgroundSize = "cover";
     }
 });
