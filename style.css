@@ -130,26 +130,28 @@ input:checked + .slider:before {
     transform: translateX(-50%);
     background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
     color: #333; /* Dark text for better visibility */
-    padding: 8px 15px; /* Smaller padding for a compact look */
+    padding: 10px 20px; /* Smaller padding for compact look */
     border-radius: 20px; /* Rounded corners */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
     font-size: 0.9em; /* Smaller text */
     display: none; /* Hide by default */
     z-index: 1000;
     text-align: center; /* Center the text */
+    width: 250px; /* Adjust width to fit content */
+    line-height: 1.4; /* Adjust line height to make it look more compact */
 }
 
 /* Style for the close button */
 .close-popup {
     background: transparent;
     border: none;
-    color: #333; /* Dark color for visibility */
-    font-size: 1.2em; /* Smaller close button */
+    color: #333;
+    font-size: 1.2em;
     cursor: pointer;
     position: absolute;
     top: 0;
     right: 5px;
-    padding: 3px 8px; /* Adjust padding */
+    padding: 3px 8px;
 }
 
 /* Mobile-specific style to show the popup */
@@ -158,4 +160,3 @@ input:checked + .slider:before {
         display: block; /* Show the popup on mobile */
     }
 }
-
