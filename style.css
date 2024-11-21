@@ -1,4 +1,5 @@
 /* Default background for larger screens (with fixed attachment) */
+/* Default background for larger screens */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -13,13 +14,14 @@ body {
     align-items: center;
 }
 
-/* Mobile-specific styles to prevent jittering */
+/* For mobile screens to prevent jittering */
 @media only screen and (max-width: 768px) {
     body {
         background-attachment: scroll; /* Disable fixed background on mobile to prevent jittering */
         background-position: center center; /* Ensure background is centered */
     }
 }
+
 
 
 
