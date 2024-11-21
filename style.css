@@ -1,64 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    /* Apply the gradient first, then the image */
-    background: linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)), /* Gradient on top */
-                url('iit-background.jpg') no-repeat center center fixed; /* Image below */
-    
-    /* Ensure the image covers the screen */
+    background: linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)),
+                url('iit-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center center; /* Keeps the image centered */
-    
+    background-position: center center;
     color: white;
     margin: 0;
     padding: 0;
-    height: 100%; /* Ensures the background spans the full height */
-    min-height: 100vh; /* Ensures the background covers the full screen height */
+    height: 100%;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
-
-
-
-
+/* Ensure the container is centered */
 .container {
-    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-    backdrop-filter: blur(10px); /* Frosted glass effect */
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
+    width: 90%; /* Fit within the screen */
     max-width: 600px;
-    width: 90%;
+    margin: 0 auto; /* Center horizontally */
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-h1 {
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    color: #fff;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-}
-
+/* Countdown sections */
 .countdown-section {
-    background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
-    backdrop-filter: blur(10px); /* Creates the glass blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari compatibility */
-    border-radius: 15px; /* Rounded corners */
-    padding: 20px; /* Space inside the tab */
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
     margin: 20px auto; /* Center horizontally */
-    width: 90%; /* Adjust width to fit within the screen */
-    max-width: 400px; /* Limit maximum width for larger screens */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    width: calc(100% - 20px); /* Ensure no overflow */
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Ensure text is centered */
 }
 
 /* Adjust for mobile */
 @media only screen and (max-width: 768px) {
     .countdown-section {
-        border-radius: 10px; /* Slightly smaller corners */
-        padding: 15px; /* Compact padding */
-        width: 90%; /* Ensure it fits within mobile screens */
-        margin: 10px auto; /* Center with reduced vertical space */
+        border-radius: 10px;
+        padding: 15px;
+        width: calc(100% - 20px); /* Prevent horizontal overflow */
+        margin: 10px auto;
+    }
+
+    body {
+        padding: 0; /* Remove extra padding on mobile */
     }
 }
 
