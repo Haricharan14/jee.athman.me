@@ -1,0 +1,64 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, rgba(123, 0, 255, 0.151), rgba(37, 117, 252, 0.8)),
+                url('iit-background.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: white;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Frosted glass effect */
+    border-radius: 15px;
+    padding: 20px;
+    max-width: 600px;
+    width: 90%;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.countdown-section {
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15); /* Light background for cards */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#countdown-mains, #countdown-advanced {
+    font-size: 2.5em; /* Increase font size from 1.5em to 2.5em */
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.motivational-quote {
+
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 1.2em;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
