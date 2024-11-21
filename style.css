@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-/* General styles (applies to larger screens) */
+/* General styles (applies to larger screens by default) */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
@@ -22,13 +22,13 @@ body {
     align-items: center;
 }
 
-/* Original desktop styles */
 .container {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
     padding: 20px;
-    max-width: 600px;
+    max-width: 600px; /* Original tab width */
     width: 80%;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
 }
@@ -38,44 +38,57 @@ body {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px; /* Restored original padding */
     margin: 20px auto;
-    width: 80%; /* Wider design for desktop */
+    width: 80%; /* Restore broader tab width for desktop */
     max-width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5em; /* Restore original font size */
+    margin-bottom: 10px;
+    color: #f9f9f9;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+#countdown-mains, #countdown-advanced {
+    font-size: 2.5em; /* Restore original countdown text size */
+    font-weight: bold;
+    color: #ffeb3b;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    white-space: nowrap;
 }
 
 /* Mobile-specific styles */
 @media only screen and (max-width: 768px) {
     body {
-        padding: 10px;
-        background-attachment: scroll; /* Remove parallax effect on mobile */
+        padding: 10px; /* Adjust padding for mobile */
+        background-attachment: scroll; /* Remove parallax effect */
     }
 
     .container {
-        background: rgba(255, 255, 255, 0.1);
         border-radius: 10px;
         padding: 15px;
-        width: 90%; /* Narrower design for mobile */
+        width: 90%; /* Fit within mobile screen */
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     .countdown-section {
-        border-radius: 10px; /* Smaller border radius */
+        border-radius: 10px; /* Smaller corners */
         padding: 15px; /* Compact padding */
         width: calc(100% - 20px); /* Prevent overflow */
         margin: 10px auto;
     }
-}
 
+    h2 {
+        font-size: 2em; /* Smaller font size for headings on mobile */
+    }
 
-
-
-h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #f9f9f9;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    #countdown-mains, #countdown-advanced {
+        font-size: 1.8em; /* Adjust countdown text size for mobile */
+    }
 }
 
 /* Styling for the countdown text */
