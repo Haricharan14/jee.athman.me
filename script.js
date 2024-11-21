@@ -4,6 +4,7 @@ console.log("Script is running...");
 const jeeMainsDate = new Date("2025-04-01T09:00:00").getTime();
 const jeeAdvancedDate = new Date("2025-05-21T09:00:00").getTime();
 
+// Function to update the countdown
 function updateCountdown() {
     const now = new Date().getTime();
 
@@ -33,6 +34,7 @@ function updateCountdown() {
         document.getElementById("countdown-advanced").innerText = "Exam Time!";
     }
 }
+
 // Get the popup and close button elements
 const mobilePopup = document.getElementById('mobilePopup');
 const closePopupButton = document.getElementById('closePopup');
@@ -46,8 +48,6 @@ if (window.innerWidth <= 768) {
 closePopupButton.addEventListener('click', function () {
     mobilePopup.style.display = 'none'; // Hide the popup
 });
-
-
 
 // Update both countdowns every second
 setInterval(updateCountdown, 1000);
