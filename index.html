@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JEE Countdown</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="vsc-initialized">
+
+<body>
     <div class="container">
-        <h1 style="border-bottom-style: solid;padding-bottom: -4px;border-top-style: solid;">JEE Countdown</h1>
+        <h1 style="border-bottom-style: solid; padding-bottom: -4px; border-top-style: solid;">JEE Countdown</h1>
 
         <!-- JEE Mains Section -->
         <div class="countdown-section">
@@ -22,20 +25,40 @@
             <p id="countdown-advanced">181d 10h 38m 9s</p>
         </div>
 
-        <p class="motivational-quote">"Powai Lake of IIT Bombay"
-        </p>
+        <!-- Motivational Quote -->
+        <p class="motivational-quote">"Powai Lake of IIT Bombay"</p>
 
+        <!-- K-Mode Toggle Switch -->
+        <div style="margin-top: 20px;">
+            <label class="switch">
+                <input type="checkbox" id="kModeToggle" checked>
+                <span class="slider"></span>
+            </label>
+            <p style="margin-top: 10px; color: white;">K-Mode</p>
+        </div>
     </div>
-    <script src="script.js"></script>
 
+    <!-- JavaScript -->
+    <script>
+        // Get the K-Mode toggle switch
+        const kModeToggle = document.getElementById('kModeToggle');
 
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JEE Countdown</title>
-    <link rel="stylesheet" href="style.css">
+        // Add event listener to toggle the gradient
+        kModeToggle.addEventListener('change', function () {
+            if (kModeToggle.checked) {
+                // Turn on gradient
+                document.body.style.background = "linear-gradient(to right, rgba(123, 0, 255, 0.151), rgba(37, 117, 252, 0.8)), url('iit-background.jpg') no-repeat center center fixed";
+                document.body.style.backgroundSize = "cover";
+            } else {
+                // Turn off gradient
+                document.body.style.background = "url('iit-background.jpg') no-repeat center center fixed";
+                document.body.style.backgroundSize = "cover";
+            }
+        });
+    </script>
 
     <!-- Add Google Fonts -->
     <link href="css2.css" rel="stylesheet">
+</body>
 
-</body></html>
+</html>
