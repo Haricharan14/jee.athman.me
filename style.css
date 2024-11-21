@@ -1,155 +1,25 @@
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-/* General styles (applies to larger screens by default) */
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
     background: linear-gradient(to right, rgba(123, 0, 255, 0.5), rgba(37, 117, 252, 0.8)),
                 url('iit-background.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center center;
     color: white;
     margin: 0;
     padding: 0;
     height: 100%;
     min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-.container {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px;
-    max-width: 600px; /* Original tab width */
-    width: 80%;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+h1 {
+    font-size: 2.8em;
+    color: #ffffff;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
-.countdown-section {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 20px; /* Restored original padding */
-    margin: 20px auto;
-    width: 80%; /* Restore broader tab width for desktop */
-    max-width: 400px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-h2 {
-    font-size: 2.5em; /* Restore original font size */
-    margin-bottom: 10px;
-    color: #f9f9f9;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-}
-
-#countdown-mains, #countdown-advanced {
-    font-size: 2.5em; /* Restore original countdown text size */
-    font-weight: bold;
-    color: #ffeb3b;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    white-space: nowrap;
-}
-
-/* Mobile-specific styles */
-@media only screen and (max-width: 768px) {
-    body {
-        padding: 10px; /* Adjust padding for mobile */
-        background-attachment: scroll; /* Remove parallax effect */
-    }
-
-    .container {
-        border-radius: 10px;
-        padding: 15px;
-        width: 90%; /* Fit within mobile screen */
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    }
-
-    .countdown-section {
-        border-radius: 10px; /* Smaller corners */
-        padding: 15px; /* Compact padding */
-        width: calc(100% - 20px); /* Prevent overflow */
-        margin: 10px auto;
-    }
-
-    h2 {
-        font-size: 2em; /* Smaller font size for headings on mobile */
-    }
-
-    #countdown-mains, #countdown-advanced {
-        font-size: 1.8em; /* Adjust countdown text size for mobile */
-    }
-}
-
-/* Styling for the countdown text */
-#countdown-mains, #countdown-advanced {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #ffeb3b;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; /* Prevent text from wrapping */
-    display: inline-block; /* Allow it to fit within the container */
-}
-
-/* Countdown text styling */
-#countdown-mains, #countdown-advanced {
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #ffeb3b;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
-    white-space: nowrap; /* Prevent wrapping */
-}
-
-/* Adjust for mobile screens */
-@media only screen and (max-width: 768px) {
-    #countdown-mains, #countdown-advanced {
-        font-size: 1.8em;  /* Smaller font size on mobile */
-    }
-
-    .countdown-section {
-        word-wrap: break-word;
-        width: 100%;
-        text-align: center;
-    }
-
-    body {
-        padding: 10px;  /* Adjust padding for smaller screens */
-    }
-}
-
-
-
-
-.motivational-quote {
-
+p.motivational-quote {
     margin-top: 20px;
     color: #ffffff;
     font-size: 1.2em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
 }
-
-/* Original background setup */
-body {
-    background: url('iit-background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: white;
-}
-
-/* Disable background fixed attachment on mobile devices */
-@media only screen and (max-width: 768px) {
-    body {
-        background-attachment: scroll; /* Fix the parallax issue on mobile */
-    }
-}
-
-
