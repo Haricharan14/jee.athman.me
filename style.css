@@ -1,3 +1,4 @@
+/* Default background for larger screens (with fixed attachment) */
 /* Default background for larger screens */
 body {
     font-family: 'Poppins', sans-serif;
@@ -9,9 +10,8 @@ body {
     padding: 0;
     min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Align content vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
+    justify-content: center;
+    align-items: center;
 }
 
 /* For mobile screens to prevent jittering */
@@ -21,6 +21,9 @@ body {
         background-position: center center; /* Ensure background is centered */
     }
 }
+
+
+
 
 .container {
     background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
@@ -61,11 +64,27 @@ h2 {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+
 .motivational-quote {
+
     margin-top: 20px;
     color: #ffffff;
     font-size: 1.2em;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
 }
 
 /* Toggle Switch Styles */
@@ -89,7 +108,7 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc; /* Default background */
+    background-color: #ccc; /* Blue gradient color */
     transition: 0.4s;
     border-radius: 24px;
 }
@@ -114,86 +133,42 @@ input:checked + .slider:before {
     transform: translateX(26px); /* Move slider when checked */
 }
 
-/* K-mode container */
-.k-mode-container {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    position: fixed; /* Make it fixed at the top */
-    right: 20px;
-    top: 20px; /* Align it with the top of the page */
-    z-index: 1000;
-}
-
-.k-mode-text {
-    font-size: 1.2em;
-    color: white;
-    font-weight: bold;
-    line-height: 24px; /* Align with the height of the toggle */
-}
-
-/* Navbar Styles */
-.navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(30, 7, 50, 0.8); /* Semi-transparent black */
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    z-index: 1000; /* Ensure it stays on top */
-}
-
-.navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 15px; /* Spacing between items */
-}
-
-.brand-name {
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-}
-
-.nav-button {
-    text-decoration: none;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.2s ease-in-out;
-}
-
-.nav-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-}
-
-/* Mobile Notification Popup */
+/* Style for the mobile popup */
+/* Style for the mobile popup */
 .mobile-popup {
     position: fixed;
-    bottom: 20px;
+    bottom: 20px; /* Position it at the bottom of the screen */
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    padding: 15px;
-    border-radius: 10px;
-    display: none;
+    background-color: rgba(255, 255, 255, 0.8); /* White with transparency */
+    color: #333; /* Dark text for better visibility */
+    padding: 10px 20px; /* Smaller padding for compact look */
+    border-radius: 20px; /* Rounded corners */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+    font-size: 0.9em; /* Smaller text */
+    display: none; /* Hide by default */
     z-index: 1000;
-    text-align: center;
+    text-align: center; /* Center the text */
+    width: 250px; /* Adjust width to fit content */
+    line-height: 1.4; /* Adjust line height to make it look more compact */
 }
 
-.mobile-popup button {
-    background-color: transparent;
+/* Style for the close button */
+.close-popup {
+    background: transparent;
     border: none;
-    color: white;
+    color: #333;
     font-size: 1.2em;
     cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 5px;
+    padding: 3px 8px;
 }
 
-.mobile-popup.show {
-    display: block;
+/* Mobile-specific style to show the popup */
+@media only screen and (max-width: 768px) {
+    .mobile-popup {
+        display: block; /* Show the popup on mobile */
+    }
 }
