@@ -126,7 +126,7 @@ h2 {
 }
 
 input:checked + .slider {
-    background-color: rgba(37, 117, 252, 0.8); /* Blue gradient color when checked */
+    background-color: rgba(37, 117, 252, 0.5); /* Blue gradient color when checked */
 }
 
 input:checked + .slider:before {
