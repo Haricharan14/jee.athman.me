@@ -1,4 +1,4 @@
-/* Default background for larger screens (with fixed attachment) */
+    /* Default background for larger screens (with fixed attachment) */
 /* Default background for larger screens */
 body {
     font-family: 'Poppins', sans-serif;
@@ -60,7 +60,7 @@ h2 {
 #countdown-mains, #countdown-advanced {
     font-size: 2.5em; /* Increase font size from 1.5em to 2.5em */
     font-weight: bold;
-    color: #ffeb3b;
+    color: #b5e7ff;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
