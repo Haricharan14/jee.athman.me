@@ -37,3 +37,17 @@ function updateCountdown() {
 
 // Update both countdowns every second
 setInterval(updateCountdown, 1000);
+
+// Get the popup and close button elements
+const mobilePopup = document.getElementById('mobilePopup');
+const closePopupButton = document.getElementById('closePopup');
+
+// Show the popup only if the user is on mobile
+if (window.innerWidth <= 768) {
+    mobilePopup.style.display = 'block'; // Show the popup on mobile
+}
+
+// Close the popup when the user clicks the close button
+closePopupButton.addEventListener('click', function () {
+    mobilePopup.style.display = 'none'; // Hide the popup
+});
