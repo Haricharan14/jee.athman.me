@@ -3,7 +3,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    background: url('iit-background.jpg') no-repeat center center scroll;
+    background: url('iit-background.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire screen */
     color: white;
     margin: 0;
