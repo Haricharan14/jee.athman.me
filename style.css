@@ -198,7 +198,7 @@ input:checked + .slider:before {
     .countdown-section 
       
     #countdown-mains, #countdown-advanced {
-        font-size: 2em; /* Increase font size from 1.5em to 2.5em */
+        font-size: 1.8em; /* Increase font size from 1.5em to 2.5em */
         font-weight: bold;
         color: #ffeb3b;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
