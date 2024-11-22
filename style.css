@@ -172,3 +172,16 @@ input:checked + .slider:before {
         display: block; /* Show the popup on mobile */
     }
 }
+
+/* Style for mobile screens to make the countdown glass thinner */
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%; /* Reduce width for mobile screens */
+        padding: 10px; /* Adjust padding for thinner appearance */
+    }
+
+    .countdown-section {
+        margin: 10px 0; /* Reduce margin for spacing between sections */
+        padding: 10px; /* Reduce padding inside the countdown sections */
+    }
+}
