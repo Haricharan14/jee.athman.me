@@ -1,7 +1,7 @@
 console.log("Script is running...");
 
 // Set the dates for JEE Mains and JEE Advanced
-const jeeMainsDate = new Date("2025-04-01T09:00:00").getTime();
+const jeeMainsDate = new Date("2025-01-22T09:00:00").getTime();
 const jeeAdvancedDate = new Date("2025-05-21T09:00:00").getTime();
 
 // Function to update the countdown
