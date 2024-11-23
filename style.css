@@ -1,4 +1,4 @@
-    /* Default background for larger screens (with fixed attachment) */
+/* Default background for larger screens (with fixed attachment) */
 /* Default background for larger screens */
 body {
     font-family: 'Poppins', sans-serif;
@@ -198,9 +198,59 @@ input:checked + .slider:before {
     .countdown-section 
       
     #countdown-mains, #countdown-advanced {
-        font-size: 1.8em; /* Increase font size from 1.5em to 2.5em */
+        font-size: 2.2em; /* Increase font size from 1.5em to 2.5em */
         font-weight: bold;
         color: #ffeb3b;
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     }
 }
+
+/* General styling for header container */
+/* General styling for header container */
+.header-container {
+    position: fixed;
+    top: 10px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Ensures space between logo and About link */
+    align-items: center;
+    padding: 0 20px; /* Added padding for spacing between the logo, About, and edges */
+}
+
+/* Styling for Athman logo */
+.athman-logo {
+    font-family: 'Dancing Script', cursive;
+    font-size: 23px;
+    font-weight: bold;
+    color: #ffffff;
+    background: linear-gradient(45deg, #49585e80, #001b2680);
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-shadow: 2px 2px 5px #000;
+    margin-left: -10px; /* Moves the logo a little left */
+}
+
+/* Styling for About link */
+.about-link {
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: normal;
+    color: #ffffff;
+    text-decoration: none;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 768px) {
+    .header-container {
+        padding: 0 15px; /* Adjusted padding for mobile screens */
+    }
+
+    .athman-logo {
+        margin-left: -8px; /* Smaller negative margin for mobile if needed */
+    }
+}
+
+
