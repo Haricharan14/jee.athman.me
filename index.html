@@ -8,21 +8,23 @@
     <link rel="stylesheet" href="style.css">
     <!-- Import Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
-
 </head>
 
 <body style="background: url('HareKrishna.jpeg') center center / cover no-repeat;" class="vsc-initialized">
 
-        <!-- Company Name in Top-Left Corner -->
-    <div style="position: fixed; top: 10px; left: 10px; z-index: 1000;">
+    <!-- Company Name and About Link -->
+    <div class="header-container">
+        <!-- Athman Logo -->
         <a href="https://athman.me" target="_blank" style="text-decoration: none;">
-            <div style="font-family: 'Dancing Script', cursive; font-size: 23px; font-weight: bold; color: #ffffff; background: linear-gradient(45deg, #3241368a, #001b2680); padding: 5px 10px; border-radius: 5px; text-shadow: 2px 2px 5px #000;">
+            <div class="athman-logo">
                 athman
             </div>
         </a>
+        <!-- About Link -->
+        <a href="#about" class="about-link">
+            About
+        </a>
     </div>
-
-    
 
     <div class="container">
         <h1 style="border-bottom-style: solid; padding-bottom: -4px; border-top-style: solid;border-top-width: 0px;border-bottom-width: 0px;margin-top: 0px;margin-bottom: 0px;">JEE Countdown</h1>
@@ -48,7 +50,6 @@
             <button id="closePopup" class="close-popup">✖</button>
         </div>
         <script src="script.js"></script>
-
     </div>
 
     <!-- Add Google Fonts -->
